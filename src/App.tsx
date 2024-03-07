@@ -10,9 +10,9 @@ import {Link} from './components/Link';
 
 const images = {
   kepler: require('./assets/kepler.png'),
-  learn: require('./assets/learn.png'),
-  support: require('./assets/support.png'),
-  build: require('./assets/build.png'),
+  shakaplayer: require('./assets/shakaplayer.png'),
+  bitmovin: require('./assets/bitmovin.png'),
+  hls: require('./assets/hls.png'),
 };
 
 export const App = () => {
@@ -27,28 +27,29 @@ export const App = () => {
       <View style={styles.container}>
         <View style={styles.links}>
           <View style={styles.headerContainer}>
-            <Text style={styles.headerText}>Hello World!</Text>
+            <Text style={styles.headerText}>Player Playground</Text>
             <Text style={styles.subHeaderText}>
-              Select one of the options below to start your Kepler journey 🚀
+              Choose a player from the list below to embark on your video
+              journey.
             </Text>
           </View>
           <Link
-            linkText={'Learn'}
+            linkText={'Shaka Player'}
             onPress={() => {
-              setImage(images.learn);
+              setImage(images.shakaplayer);
             }}
             testID="sampleLink"
           />
           <Link
-            linkText={'Build'}
+            linkText={'HLS Player'}
             onPress={() => {
-              setImage(images.build);
+              setImage(images.hls);
             }}
           />
           <Link
-            linkText={'Support'}
+            linkText={'Bitmovin Player'}
             onPress={() => {
-              setImage(images.support);
+              setImage(images.bitmovin);
             }}
           />
         </View>
@@ -58,8 +59,7 @@ export const App = () => {
       </View>
       <View style={styles.textContainer}>
         <Text style={styles.text}>
-          💡 Edit App.tsx to change this screen and then come back to see your
-          edits
+          💡 This app is exclusively designed for enhancing player development.
         </Text>
       </View>
     </ImageBackground>
