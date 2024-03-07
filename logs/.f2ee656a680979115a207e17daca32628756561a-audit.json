@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/slavo_3/Documents/weather-group/firetv-kepler-sdk/logs/.f2ee656a680979115a207e17daca32628756561a-audit.json",
+    "files": [
+        {
+            "date": 1709835803622,
+            "name": "/Users/slavo_3/Documents/weather-group/firetv-kepler-sdk/logs/error-2024-03-07.log",
+            "hash": "cecf83e477879b24db2c81977a5c841f"
+        }
+    ]
+}
